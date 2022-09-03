@@ -1,0 +1,33 @@
+name: CommunityBuildPlugin
+version: '${project.version}'
+main: de.trexic.communitybuildplugin.CommunityBuildPlugin
+api-version: 1.18
+authors: [ Trexic ]
+depend:
+  - InventoryGuiApi
+  - LuckPerms
+
+commands:
+  head: {}
+  reloadPrefix: {}
+  hologram: {}
+  blackboard:
+    aliases:
+      - bb
+  updateblackboard:
+    aliases:
+      - ubb
+  setLobbySpawn: {}
+
+
+permissions:
+  communityServer.chat.colors:
+    description: Allows to use colorcodes in the chat
+  communityServer.chat.formats:
+    description: Allows to use formattings in the chat
+  communityServer.prefix.update: {}
+  communityServer.holograms.update: {}
+  communityServer.join:
+    description: Permission needed to join
+  communityServer.setLobby: {}
+  commutiyServer.worldmanagement: {}
